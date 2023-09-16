@@ -1,0 +1,60 @@
+あなたはフロントエンジニアのプロフェッショナルです。
+Nuxt.jsを使って以下の要件を満たすページを作ってください。
+
+・・プロフィール、News、Skills、Worksの項目を使ってください。
+ディレクトリ構成は、
+src/
+├── components/　・・・　様々なコンポーネントをまとめたフォルダ
+│   ├── base/　・・・　サイト全体を構成するコンポーネント（ヘッダー、レイアウト系、metaタグなど）
+│   ├── page/　・・・　pages/の中身の実態があるフォルダ
+│   └── ui/　・・・　ボタンなど最小単位のコンポーネント
+├── const/　・・・　定数を定義するファイルを置くフォルダ
+├── features/　・・・　特定の機能などをまとめたフォルダ。この中にも複数のコンポーネントが存在する
+├── lib/　・・・　ライブラリなど
+├── pages/　・・・　ページ（デフォルトのもの）
+└── styles/　・・・　サイト内全体で使う共通CSS
+
+base/
+├── EmbedTag/
+│   └── GoogleTagManager.jsx
+├── Footer/
+│   ├── Footer.jsx
+│   └── Footer.module.scss
+├── Header/
+│   ├── Header.jsx
+│   └── Header.module.scss
+├── Layout/
+│   └── Layout.jsx
+├── Meta/
+│   └── Meta.jsx
+└── Wrapper/
+    ├── Inner.jsx
+    └── Inner.module.scss
+
+src/
+├── components/
+│   └── page/
+│      └── News/
+│         └── Archive.jsx
+│         └── Archive.module.scss
+└── pages/
+    └── news/
+          └── index.jsx // ニュース一覧のトップページ
+          └── category/
+          │     └── [slug]/
+          │           └── index.jsx // カテゴリーごとのニュース一覧
+          └── page/
+                └── [slug]/
+                      └── index.jsx // ニュース一覧のxページ目用
+ui
+└── Button
+│   ├── Button.jsx
+│   └── Button.module.scss
+└── Component_1
+│   ├── Component_1.jsx
+│   └── Component_1.module.scss
+└── Component_2
+    ├── Component_2.jsx
+    └── Component_2.module.scss
+    のようにお願いします。
+    
